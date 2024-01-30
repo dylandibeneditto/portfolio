@@ -1,4 +1,4 @@
 import "./css/styles.css";
 import Experience from "./js/experience.js";
 
-const experience = new Experience()
+const experience = new Experience(document.getElementById("canvas"))
