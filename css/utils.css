@@ -2,3 +2,38 @@
     font-family: PlexMono;
     src: url(/fonts/IBM_Plex_Mono/IBMPlexMono-Semibold.ttf);
 }
+
+* {
+    font-family: helvetica, sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    color: var(--text);
+}
+
+body {
+    background: var(--bg);
+}
+
+.grid-x {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.grid-y {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.flex-x {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-y {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    cursor: pointer;
+}
