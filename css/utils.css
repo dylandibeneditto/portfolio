@@ -1,6 +1,6 @@
 @font-face {
     font-family: PlexMono;
-    src: url(/fonts/IBM_Plex_Mono/IBMPlexMono-Semibold.ttf);
+    src: url(/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
 }
 
 * {
@@ -36,4 +36,5 @@ body {
 
 .button {
     cursor: pointer;
+    border-radius: .3rem;
 }
