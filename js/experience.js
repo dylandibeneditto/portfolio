@@ -24,10 +24,20 @@ export default class Experience {
         this.time.on("update", ()=> {
             this.update()
         })
+
+        this.sizes.on("resize", ()=> {
+            this.resize();
+        })
+    }
+    
+    resize() {
+        this.renderer.resize();
+        this.camera.resize();
     }
 
     update() {
         this.camera.update();
         this.renderer.update();
     }
+
 }
