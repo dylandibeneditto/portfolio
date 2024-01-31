@@ -1,3 +1,5 @@
+import "./css/theme/default.css"
+import "./css/utils.css"
 import "./css/styles.css";
 import Experience from "./js/experience.js";
 
