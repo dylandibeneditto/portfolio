@@ -1,4 +1,4 @@
-# StudyPal 
+# Personal Portfolio
 
 ## License 
 
