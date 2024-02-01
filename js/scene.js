@@ -7,8 +7,14 @@ export default class Scene {
         this.experience = new Experience();
         this.scene = this.experience.scene;
         
+        const ambient = new THREE.PointLight(new THREE.Color(0xffffff), 1000, 1000, 0.1)
+        ambient.position.set(10,10,10)
+        
+        const ambient2 = new THREE.PointLight(new THREE.Color(0xffffff), 1000, 1000, 0.1)
+        ambient2.position.set(-10,-10,10)
+
         const light = new THREE.PointLight(new THREE.Color(0xffffff), 100, 1000, .1)
-        light.position.set(4,3,-10)
+        light.position.set(5,4,-10)
 
         const light2 = new THREE.PointLight(new THREE.Color(0xffffff), 100, 1000, .1)
         light2.position.set(0,-1,0)
@@ -16,12 +22,11 @@ export default class Scene {
         const light3 = new THREE.PointLight(new THREE.Color(0xffffff), 100, 1000, 1);
         light3.position.set(1,2,0);
 
-        const light4 = new THREE.AmbientLight(0xffffff, 10000000)
-
+        this.scene.add(ambient)
+        this.scene.add(ambient2)
         this.scene.add(light)
         this.scene.add(light2)
-        this.scene.add(light3);
-        this.scene.add(light4)
+        this.scene.add(light3)
 
         this.loader = new GLTFLoader();
 
@@ -42,5 +47,9 @@ export default class Scene {
             this.cube.rotation.z = ((this.experience.mouse.x-(window.innerWidth/2))/window.innerWidth)/-5;
             this.cube.rotation.x = Math.PI/2+(((this.experience.mouse.y-(window.innerHeight/2))/window.innerHeight)/2)
         }
+    }
+
+    resize() {
+        
     }
 }

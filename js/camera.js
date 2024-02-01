@@ -11,7 +11,7 @@ export default class Camera {
 
         this.createPerspectiveCamera();
         this.perspectiveCamera.position.z = 3.5;
-        this.perspectiveCamera.position.x = .3
+        this.perspectiveCamera.position.x = .29
     }
 
     createPerspectiveCamera() {
