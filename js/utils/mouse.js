@@ -4,10 +4,10 @@ export default class Mouse {
     constructor() {
         this.experience = new Experience();
 
-        this.x = 0;
-        this.y = 0;
+        this.x = window.innerWidth/2;
+        this.y = window.innerHeight/2;
 
-        this.canvas = { x: 0, y: 0 }
+        this.canvas = { x: this.experience.sizes.width/2, y: this.experience.sizes.height/2 }
 
         document.addEventListener("mousemove", (e) => {
             this.x = e.clientX;
@@ -15,7 +15,6 @@ export default class Mouse {
         })
 
         this.experience.canvas.addEventListener("mousemove", (e) => {
-            console.log(e)
             this.canvas = { x: e.offsetX, y: e.offsetY }
         })
     }
