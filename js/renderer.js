@@ -20,7 +20,7 @@ export default class Renderer {
             alpha: true
         })
         
-
+        
         this.renderer.physicallyCorrectLights = true;
         this.renderer.toneMapping = THREE.CineonToneMapping;
         this.renderer.toneMappingExposure = 1.75;

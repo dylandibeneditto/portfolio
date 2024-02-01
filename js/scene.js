@@ -1,5 +1,4 @@
 import * as THREE from "three"
-import { TextGeometry } from "three/addons/geometries/TextGeometry.js"
 import Experience from "./experience.js"
 
 export default class Scene {
