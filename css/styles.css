@@ -20,7 +20,3 @@
     border: var(--text) 1px solid;
     fill: var(--text);
 }
-
-#header-logo {
-    color: black;
-}

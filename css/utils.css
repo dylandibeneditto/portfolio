@@ -12,6 +12,7 @@
 
 body {
     background: var(--bg);
+    margin: 0;
 }
 
 .grid-x {
