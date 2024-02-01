@@ -16,7 +16,8 @@ export default class Renderer {
     setRenderer() {
         this.renderer = new THREE.WebGLRenderer({
             canvas: this.canvas,
-            antialias: true
+            antialias: true,
+            alpha: true
         })
         
 

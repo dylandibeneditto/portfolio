@@ -10,7 +10,7 @@ export default class Camera {
         this.canvas = this.experience.canvas;
 
         this.createPerspectiveCamera();
-        console.log(this)
+        this.perspectiveCamera.position.z = 5;
     }
 
     createPerspectiveCamera() {
