@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "esbuild": "^0.19.11",
-    "prosemirror-state": "^1.4.3"
+    "prosemirror-state": "^1.4.3",
+    "three": "^0.161.0"
   }
 }
