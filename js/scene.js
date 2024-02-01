@@ -44,12 +44,12 @@ export default class Scene {
 
     update() {
         if(this.cube) {
-            this.cube.rotation.z = ((this.experience.mouse.x-(window.innerWidth/2))/window.innerWidth)/-5;
-            this.cube.rotation.x = Math.PI/2+(((this.experience.mouse.y-(window.innerHeight/2))/window.innerHeight)/2)
+            this.cube.rotation.z = ((this.experience.mouse.x-(window.innerWidth/2))/window.innerWidth)/-20;
+            this.cube.rotation.x = Math.PI/2+(((this.experience.mouse.y-(window.innerHeight/2))/window.innerHeight)/8)
         }
     }
 
     resize() {
-        
+
     }
 }
