@@ -1,4 +1,4 @@
-import Experience from "../experience";
+import Experience from "../experience1";
 
 export default class Mouse {
     constructor() {

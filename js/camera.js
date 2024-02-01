@@ -1,6 +1,6 @@
 import * as THREE from "three"
 
-import Experience from "./experience.js";
+import Experience from "./experience1.js";
 
 export default class Camera {
     constructor() {
