@@ -1,6 +1,7 @@
 #header {
     grid-template-columns: auto 1fr auto;
     padding: 1rem;
+    align-items: center;
 }
 
 #header-buttons {
@@ -19,4 +20,10 @@
     width: 1.5rem;
     border: var(--text) 1px solid;
     fill: var(--text);
+}
+
+#svg-logo {
+    fill: var(--accent);
+    height: 2.5rem;
+    width: auto;
 }
