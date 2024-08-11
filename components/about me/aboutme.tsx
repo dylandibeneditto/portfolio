@@ -2,7 +2,7 @@ import "./aboutme.css";
 
 export default function AboutMe() {
   return (
-    <div className="about-me">
+    <div className="about-me load-animate">
       <div className="header">
         <div className="title">About Me</div>
         <div className="time">Saturday — August 10 — 10:00pm</div>

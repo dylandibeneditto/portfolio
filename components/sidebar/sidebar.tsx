@@ -1,7 +1,10 @@
+import SidebarLabel from "../sidebar label/sidebarlabel";
 import "./sidebar.css";
 
 export default function Sidebar() {
     return (
-        <>SIDE BAR</>
+        <div className="sidebar">
+            <SidebarLabel text="hello" icon="world"></SidebarLabel>
+        </div>
     )
 }

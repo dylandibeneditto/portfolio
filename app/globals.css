@@ -1,11 +1,35 @@
 :root {
   --background: rgb(250, 250, 250);
-  --secondary-bg: rgba(0, 0, 0, 0.043);
+  --secondary-bg: rgba(0, 0, 0, 0.021);
+  --border: rgba(0, 0, 0, 0.043);
   --primary: rgb(10,10,10);
   --secondary: rgb(80,80,80);
   --tertiary: rgb(140,140,140);
+  --load-anim: 1.5s cubic-bezier(0.2, 1.4, 0.5, 1) 0s 1 appear;
 }
 
 * {
   color: var(--primary);
+}
+
+@keyframes appear {
+  0% {
+    transform: translate(0, 50px);
+    filter: blur(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.animate {
+  animation: var(--load-anim);
+  animation-fill-mode: forwards;
 }

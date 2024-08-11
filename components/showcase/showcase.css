@@ -5,7 +5,9 @@
     align-items: center;
     justify-content: center;
     background: var(--secondary-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
+    animation: var(--load-anim);
 }
 
 .showcase-image {
