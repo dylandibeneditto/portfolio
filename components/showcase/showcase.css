@@ -1,0 +1,14 @@
+.showcase {
+    overflow: hidden;
+    display: inline-flex;
+    min-height: 240px;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-bg);
+    border-radius: 8px;
+}
+
+.showcase-image {
+    width: 80%;
+    height: auto;
+}

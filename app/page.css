@@ -1,0 +1,33 @@
+html {
+    background: var(--background);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 0 24px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    padding-top: 32px;
+}
+
+.work > * {
+    display: flex;
+    flex-direction: column;
+}
