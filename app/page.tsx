@@ -8,18 +8,33 @@ import "./page.css";
 export default function Home() {
   useEffect(() => {
     const content = document.querySelectorAll('.animate-on-load');
-    content.forEach((el) => {
-      el.classList.remove('hidden');
-      el.classList.add('animate');
+
+    content.forEach(parent => {
+      const children = parent.children;
+      Array.from(children).forEach((child, index) => {
+        if (child instanceof HTMLElement) {  // Type guard to narrow type
+          const delay = index * 0.1; // Adjust the multiplier to control the delay
+          child.style.animationDelay = `${delay}s !important`;
+          setTimeout(() => {
+            child.classList.remove('hidden');
+            child.classList.add('animate');
+          }, delay * 1000); // Apply delay before removing 'hidden'
+        }
+      });
     });
   }, []);
 
   return (
     <div className="layout">
       <Sidebar></Sidebar>
-      <div className="content animate-on-load hidden">
+      <div className="content animate-on-load">
         <AboutMe></AboutMe>
-        <div className="work">
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="work hidden">
           <div>
             <Showcase image="next.svg" title="hi" url="hello"></Showcase>
           </div>

@@ -1,6 +1,8 @@
 .about-me {
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--break);
 }
 
 .about-me > .header {
@@ -25,6 +27,53 @@
 .about-me > .description {
     font-size: 28px;
     letter-spacing: -1px;
+    padding-bottom: 16px;
+}
+
+.about-me > .read-more {
+    padding: 8px 12px;
+    font-size: 16px;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    width: fit-content;
+    border-radius: 4px;
+    letter-spacing: -.5px;
+    cursor: pointer;
+    box-shadow: var(--click-shadow);
+    text-decoration: none;
+    transition: all .2s ease;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 8px;
+    overflow: hidden;
+}
+
+@keyframes arrow {
+    49.999% {
+        transform: translate(200%,-200%);
+    }
+    50.001% {
+        transform: translate(-200%,200%);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.about-me > .read-more > span {
+    pointer-events: none;
+}
+
+.about-me > .read-more:hover > span {
+    animation: .45s arrow ease;
+}
+
+.about-me > .read-more:hover {
+    box-shadow: var(--click-shadow-hover);
+    background: var(--background);
+    transform: scale(1.01);
 }
 
 @media (max-width: 1100px) {

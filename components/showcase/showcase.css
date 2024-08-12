@@ -7,7 +7,14 @@
     background: var(--secondary-bg);
     border: 1px solid var(--border);
     border-radius: 8px;
-    animation: var(--load-anim);
+    box-shadow: var(--click-shadow);
+    transition: all .2s ease;
+}
+
+.showcase:hover {
+    background: var(--background);
+    box-shadow: var(--click-shadow-hover);
+    transform: scale(1.01);
 }
 
 .showcase-image {
