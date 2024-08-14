@@ -1,129 +1,34 @@
+html {
+    background: var(--background);
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
 .content {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: 1fr auto;
-  width: 100dvw;
-  height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 0 24px;
+    min-height: 100dvh;
 }
 
-.grid-main > * > * > * > *,
-.grid-main > * > * > *,
-.grid-main > * > *,
-.grid-main > *,
-.grid-main {
-  gap: 10px;
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    padding-top: 32px;
 }
 
-.grid-main {
-  padding: 10px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-col-1 {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: auto 1fr;
-}
-
-.grid-col-col {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: 1fr 1fr;
-}
-
-.grid-col-1 > .grid-col-col {
-  grid-template-rows: 1fr auto;
-}
-
-.grid-row {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr auto;
-}
-
-.grid-col-2 {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: 1fr auto;
-}
-
-.grid-col-2 > .tile {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  overflow: hidden;
-}
-
-.grid-col-2 > .grid-col-col {
-  grid-template-rows: auto 1fr;
-}
-
-.grid-rcol {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.grid-col-3 {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: auto 1fr;
-}
-
-.footer {
-  height: 2rem;
-}
-
-.header {
-  height: 2rem;
-}
-
-.focus-items {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  padding: 8px;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-.studio-icon > * {
-  width: 100%;
-  height: fit-content;
-  padding: 8px;
-  fill: var(--text);
-}
-
-.grid-row *:contains(.grid-rcol) {
-  grid-template-columns: 1fr auto;
-}
-
-.grid-rcol > * {
-  display: flex;
-  cursor: pointer;
-  user-select: none;
-  transition: 0.2s ease;
-}
-
-.grid-rcol > *:hover {
-  filter: brightness(var(--hover-brightness));
-}
-
-.grid-rcol > * > * {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-}
-
-.grid-rcol > * > * > svg {
-  height: 20px;
-  width: 20px;
-}
-
-.grid-rcol > * > * > div {
-  font-size: 14px;
-  font-weight: 400;
+.work > * {
+    display: flex;
+    flex-direction: column;
 }

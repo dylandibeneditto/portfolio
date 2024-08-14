@@ -1,110 +1,51 @@
-import Favicon from "@/components/favicon";
-import AboutMe from "@/components/AboutMe";
-import Focus from "@/components/Focus";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+"use client";
+import React, { useEffect } from "react";
+import AboutMe from "@/components/about me/aboutme";
+import Sidebar from "@/components/sidebar/sidebar";
+import Showcase from "@/components/showcase/showcase";
 import "./page.css";
-import Details from "@/components/Details";
-import Clock from "@/components/Clock";
-import BoxTitle from "@/components/BoxTitle";
-import ParticleCanvas from "@/components/ParticleCanvas";
-import AwardsScroll from "@/components/AwardsScroll";
 
 export default function Home() {
+  useEffect(() => {
+    const content = document.querySelectorAll('.animate-on-load');
+
+    content.forEach(parent => {
+      const children = parent.children;
+      Array.from(children).forEach((child, index) => {
+        if (child instanceof HTMLElement) {  // Type guard to narrow type
+          const delay = index * 0.1; // Adjust the multiplier to control the delay
+          child.style.animationDelay = `${delay}s !important`;
+          setTimeout(() => {
+            child.classList.remove('hidden');
+            child.classList.add('animate');
+          }, delay * 1000); // Apply delay before removing 'hidden'
+        }
+      });
+    });
+  }, []);
+
   return (
-    <>
-      <div className="content">
-        <div className="grid-main">
-          <div className="grid-col-1">
-            <div className="grid-col-col">
-              <div className="tile">
-                <BoxTitle title="details" />
-                <Details></Details>
-              </div>
-
-              <div className="tile studio-icon">
-                {/*<Favicon />*/}
-              </div>
-            </div>
-
-            <div className="tile">
-              <BoxTitle title="about me" />
-              <AboutMe />
-            </div>
+    <div className="layout">
+      <Sidebar></Sidebar>
+      <div className="content animate-on-load">
+        <AboutMe></AboutMe>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="hidden">hello</div>
+        <div className="work hidden">
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
           </div>
-
-          <div className="grid-col-2">
-            <div className="tile">
-              <BoxTitle title="skills" />
-              <ParticleCanvas />
-            </div>
-
-            <div className="grid-col-col">
-              <div className="grid-row">
-                <div className="tile">
-                  <BoxTitle title="awards" />
-                  <AwardsScroll />
-                </div>
-
-                <div className="grid-rcol">
-                  <div className="tile">
-                    <a className="contact" href="mailto:dibenedittod@gmail.com">
-                      <FontAwesomeIcon icon={faEnvelope} />
-                      <div className="contact-title">email</div>
-                    </a>
-                  </div>
-
-                  <div className="tile">
-                    <a
-                      href="https://github.com/dylandibeneditto"
-                      target="_blank"
-                      className="github"
-                    >
-                      <FontAwesomeIcon icon={faGithub} />
-                      <div>github</div>
-                    </a>
-                  </div>
-
-                  <div className="tile">
-                    <a href="" target="_blank" className="twitter">
-                      <FontAwesomeIcon icon={faXTwitter} />
-                      <div>twitter</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="tile">
-                <BoxTitle title="focus" />
-                <div className="focus-items">
-                  <Focus title="web design" color="lime" />
-                  <Focus title="web development" color="lime" />
-                  <Focus title="graphic design" color="lime" />
-                  <Focus title="UX design / research" color="lime" />
-                  <Focus title="algorithms and data structures" color="lime" />
-                  <Focus title="ios app design" color="gold" />
-                  <Focus title="ios app development" color="gold" />
-                  <Focus title="motion and animation design" color="gold" />
-                  <Focus title="SEO optimization" color="gold" />
-                  <Focus title="backend systems development" color="orange" />
-                </div>
-              </div>
-            </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
           </div>
-
-          <div className="grid-col-3">
-            <div className="tile">
-              <Clock />
-            </div>
-
-            <div className="tile">
-              <BoxTitle title="case-studies" />
-            </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
