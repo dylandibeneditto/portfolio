@@ -52,6 +52,7 @@
 @keyframes arrow {
     49.999% {
         transform: translate(200%,-200%);
+        filter: blur(10px);
     }
     50.001% {
         transform: translate(-200%,200%);
@@ -59,6 +60,7 @@
 
     100% {
         transform: translate(0,0);
+        filter: blur(0px);
     }
 }
 

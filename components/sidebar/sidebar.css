@@ -1,5 +1,39 @@
 .sidebar {
     width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ditto-icon > * > * {
+    fill: var(--primary);
+}
+
+.ditto-icon {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--click-shadow);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.ditto-icon:hover {
+    box-shadow: var(--click-shadow-hover);
+    transform: scale(1.01);
+    background: var(--background);
+}
+
+.sidebar-section {
+    border-bottom: 1px solid var(--border);
+    padding: 12px;
+}
+.sidebar-section > .title {
+    color: var(--tertiary);
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 16px;
 }
 
 @media (max-width: 835px) {

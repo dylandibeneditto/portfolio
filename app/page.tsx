@@ -29,11 +29,6 @@ export default function Home() {
       <Sidebar></Sidebar>
       <div className="content animate-on-load">
         <AboutMe></AboutMe>
-        <div className="hidden">hello</div>
-        <div className="hidden">hello</div>
-        <div className="hidden">hello</div>
-        <div className="hidden">hello</div>
-        <div className="hidden">hello</div>
         <div className="work hidden">
           <div>
             <Showcase image="next.svg" title="hi" url="hello"></Showcase>
