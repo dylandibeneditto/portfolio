@@ -37,7 +37,31 @@ export default function Sidebar() {
       <div className="socials-sidebar sidebar-section">
         <div className="title">SOCIALS</div>
         <SidebarLabel
+          text="Email"
+          icon="email"
+          link="mailto:dibenedittod@gmail.com"
+          external={true}
+        ></SidebarLabel>
+        <SidebarLabel
           text="Github"
+          icon="github"
+          link="https://github.com/dylandibeneditto"
+          external={true}
+        ></SidebarLabel>
+        <SidebarLabel
+          text="LeetCode"
+          icon="leetcode"
+          link="https://leetcode.com/u/dylandibeneditto/"
+          external={true}
+        ></SidebarLabel>
+        <SidebarLabel
+          text="LinkedIn"
+          icon="about"
+          link="https://github.com/dylandibeneditto"
+          external={true}
+        ></SidebarLabel>
+        <SidebarLabel
+          text="Twitter"
           icon="about"
           link="https://github.com/dylandibeneditto"
           external={true}

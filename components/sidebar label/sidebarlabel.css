@@ -5,6 +5,15 @@
     padding: 0px 8px;
     gap: 4px;
     cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .15s ease;
+}
+
+.label:hover {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--click-shadow);
 }
 
 .icon {
