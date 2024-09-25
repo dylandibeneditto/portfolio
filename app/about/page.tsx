@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Sidebar from "@/components/sidebar/sidebar";
 import "./page.css";
-import triggerAnimateEffect from "@/components/helperfunctions/triggerAnimateEffect";
+import triggerAnimateEffect from "@/components/helper functions/triggerAnimateEffect";
 
 export default function About() {
   useEffect(() => {

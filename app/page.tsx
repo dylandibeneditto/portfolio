@@ -4,7 +4,7 @@ import AboutMe from "@/components/about me/aboutme";
 import Sidebar from "@/components/sidebar/sidebar";
 import Showcase from "@/components/showcase/showcase";
 import "./page.css";
-import triggerAnimateEffect from "@/components/helperfunctions/triggerAnimateEffect";
+import triggerAnimateEffect from "@/components/helper functions/triggerAnimateEffect";
 
 export default function Home() {
   useEffect(() => {
