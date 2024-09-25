@@ -14,6 +14,7 @@ export default function SidebarLabel(props: {
   icon: string;
   link: string;
   external: boolean;
+  selected: string;
 }) {
   const renderIcon = () => {
     switch (props.icon) {
@@ -40,7 +41,7 @@ export default function SidebarLabel(props: {
 
   return (
     <Link href={props.link} target={props.external ? "_blank" : ""}>
-      <div className="label">
+      <div className={"label " + (props.selected==props.text?"selected":"")}>
         <div className="icon">{renderIcon()}</div>
         <div className="title">{props.text}</div>
       </div>

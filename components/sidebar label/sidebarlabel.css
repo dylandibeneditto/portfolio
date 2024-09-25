@@ -12,6 +12,11 @@
 
 .label:hover {
     background: var(--secondary-bg);
+    box-shadow: var(--click-shadow);
+}
+
+.label.selected {
+    background: var(--secondary-bg);
     border: 1px solid var(--border);
     box-shadow: var(--click-shadow);
 }

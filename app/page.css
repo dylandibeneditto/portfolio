@@ -1,25 +1,4 @@
-html {
-    background: var(--background);
-    overflow: hidden;
-}
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.layout {
-    display: grid;
-    grid-template-columns: auto 1fr;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    padding: 0 24px;
-    min-height: 100dvh;
-}
 
 .work {
     display: grid;
