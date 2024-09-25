@@ -35,18 +35,20 @@ export default function AboutMe() {
       <div className="header">
         <div className="title">About Me</div>
         <div className="time">
-          <span className="date">Saturday</span> — <span className="date">August 10</span> — {renderTime()}
+          <span className="date">Saturday</span> —{" "}
+          <span className="date">August 10</span> — {renderTime()}
         </div>
       </div>
       <div className="description">
         As a dedicated software engineer and designer, I specialize in the
         seamless integration of design and programming across multiple
-        disciplines. My expertise spans software design and engineering, UX
-        design, web design and development, and iOS UX/UI design and development.
-        I am passionate about crafting intuitive and visually compelling digital
-        experiences that are as functional as they are beautiful. By focusing on
-        both the aesthetic and technical aspects of a project, I ensure that each
-        solution not only meets but exceeds user expectations.
+        disciplines. My expertise spans software design and engineering, UX/UI
+        design, web design and development, iOS design and development, as
+        well graphic design. I am passionate about crafting intuitive and
+        visually compelling digital experiences that are as functional as they
+        are beautiful. By focusing on both the aesthetic and technical aspects
+        of a project, I ensure that each solution not only meets but exceeds
+        user expectations.
       </div>
       <Link className="read-more" href={"/about"}>
         Read More

@@ -1,8 +1,11 @@
 import AboutIcon from "../icons/about";
+import CodeIcon from "../icons/code";
+import DesignIcon from "../icons/design";
 import EmailIcon from "../icons/email";
 import GithubIcon from "../icons/github";
 import LeetCodeIcon from "../icons/leetcode";
 import ProjectsIcon from "../icons/projects";
+import TwitterIcon from "../icons/twitter";
 import "./sidebarlabel.css";
 import Link from "next/link";
 
@@ -24,6 +27,12 @@ export default function SidebarLabel(props: {
         return <GithubIcon />;
       case "leetcode":
         return <LeetCodeIcon />;
+      case "design":
+        return <DesignIcon />;
+      case "code":
+        return <CodeIcon />;
+      case "twitter":
+        return <TwitterIcon />;
       default:
         return <span className="material-symbols-outlined">{props.icon}</span>;
     }

@@ -18,10 +18,19 @@ export default function Sidebar() {
           link="/about"
           external={false}
         ></SidebarLabel>
+      </div>
+      <div className="projects-sidebar sidebar-section">
+        <div className="title">PROJECTS</div>
         <SidebarLabel
-          text="Creations"
-          icon="projects"
-          link="/creations"
+          text="Design"
+          icon="design"
+          link="/design"
+          external={false}
+        ></SidebarLabel>
+        <SidebarLabel
+          text="Code"
+          icon="code"
+          link="/code"
           external={false}
         ></SidebarLabel>
       </div>
@@ -55,15 +64,9 @@ export default function Sidebar() {
           external={true}
         ></SidebarLabel>
         <SidebarLabel
-          text="LinkedIn"
-          icon="about"
-          link="https://github.com/dylandibeneditto"
-          external={true}
-        ></SidebarLabel>
-        <SidebarLabel
           text="Twitter"
-          icon="about"
-          link="https://github.com/dylandibeneditto"
+          icon="twitter"
+          link="https://x.com/dylan_ditto"
           external={true}
         ></SidebarLabel>
       </div>
