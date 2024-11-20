@@ -26,6 +26,33 @@ export default function Home() {
           <div>
             <Showcase image="next.svg" title="hi" url="hello"></Showcase>
           </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
+          <div>
+            <Showcase image="next.svg" title="hi" url="hello"></Showcase>
+          </div>
         </div>
       </div>
     </div>

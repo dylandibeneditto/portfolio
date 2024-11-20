@@ -1,0 +1,30 @@
+.gallery-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.gallery-item > img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--click-shadow);
+}
+
+.gallery-item > .image-data {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.image-data > .location {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.image-data > .date {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 10px;
+}
