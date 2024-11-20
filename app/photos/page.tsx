@@ -12,6 +12,27 @@ import i3 from "../../public/photos/bg_final-03.jpg";
 import i4 from "../../public/photos/bg_final-04.jpg";
 import i5 from "../../public/photos/bg_final-05.jpg";
 import i6 from "../../public/photos/bg_final-06.jpg";
+import i7 from "../../public/photos/bg_final-07.jpg";
+import i8 from "../../public/photos/bg_final-08.jpg";
+import i9 from "../../public/photos/bg_final-09.jpg";
+import i10 from "../../public/photos/bg_final-10.jpg";
+import i11 from "../../public/photos/bg_final-11.jpg";
+import i12 from "../../public/photos/bg_final-12.jpg";
+import i13 from "../../public/photos/bg_final-13.jpg";
+import i14 from "../../public/photos/bg_final-14.jpg";
+import i15 from "../../public/photos/bg_final-15.jpg";
+import i16 from "../../public/photos/bg_final-16.jpg";
+import i17 from "../../public/photos/bg_final-17.jpg";
+import i18 from "../../public/photos/bg_final-18.jpg";
+import i19 from "../../public/photos/bg_final-19.jpg";
+import i20 from "../../public/photos/bg_final-20.jpg";
+import i21 from "../../public/photos/bg_final-27.jpg";
+import i22 from "../../public/photos/bg_final-22.jpg";
+import i23 from "../../public/photos/20240705-DSC_4047-2-2.jpg";
+import i24 from "../../public/photos/bg_final-23.jpg";
+import i25 from "../../public/photos/bg_final-24.jpg";
+import i26 from "../../public/photos/bg_final-25.jpg";
+import i27 from "../../public/photos/bg_final-26.jpg";
 import GalleryItem from "@/components/gallery item/galleryItem";
 
 export default function Photo() {
@@ -43,6 +64,61 @@ export default function Photo() {
               location="Great Falls, VA"
               date="Summer '24"
             ></GalleryItem>
+            <GalleryItem
+              image={i7}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i9}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i11}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i13}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i15}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i17}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i19}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i21}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i23}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i25}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i27}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
           </div>
           <div className="gallery-col-2">
             <GalleryItem
@@ -57,6 +133,56 @@ export default function Photo() {
             ></GalleryItem>
             <GalleryItem
               image={i6}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i8}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i10}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i12}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i14}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i16}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i18}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i20}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i22}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i24}
+              location="Great Falls, VA"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i26}
               location="Great Falls, VA"
               date="Summer '24"
             ></GalleryItem>
