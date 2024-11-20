@@ -25,17 +25,19 @@ import i16 from "../../public/photos/bg_final-16.jpg";
 import i17 from "../../public/photos/bg_final-17.jpg";
 import i18 from "../../public/photos/bg_final-18.jpg";
 import i19 from "../../public/photos/bg_final-19.jpg";
-import i20 from "../../public/photos/bg_final-20.jpg";
-import i21 from "../../public/photos/bg_final-27.jpg";
+import i20 from "../../public/photos/bg_final-30.jpg";
+import i21 from "../../public/photos/bg_final-30.jpg";
 import i22 from "../../public/photos/bg_final-22.jpg";
 import i23 from "../../public/photos/20240705-DSC_4047-2-2.jpg";
 import i24 from "../../public/photos/bg_final-23.jpg";
 import i25 from "../../public/photos/bg_final-24.jpg";
 import i26 from "../../public/photos/bg_final-25.jpg";
 import i27 from "../../public/photos/bg_final-26.jpg";
+import i28 from "../../public/photos/bg_final-28.jpg";
+import i29 from "../../public/photos/bg_final-29.jpg";
 import GalleryItem from "@/components/gallery item/galleryItem";
 
-export default function Photo() {
+export default function Photos() {
   useEffect(() => {
     triggerAnimateEffect();
   }, []);
@@ -43,147 +45,157 @@ export default function Photo() {
   return (
     <div className="layout">
       <Sidebar selected="Photography"></Sidebar>
-      <div className="content animate-on-load">
+      <div className="content">
         <div className="photo-section-title">
           <div>Photo Gallery</div>
         </div>
         <div className="gallery">
           <div className="gallery-col-1">
             <GalleryItem
-              image={i1}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
               image={i3}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i5}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i7}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i9}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i11}
-              location="Great Falls, VA"
+              location="Chesapeake and Ohio Canal National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i13}
-              location="Great Falls, VA"
+              location="Great Falls National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
-              image={i15}
-              location="Great Falls, VA"
+              image={i5}
+              location="Chesapeake and Ohio Canal National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
-              image={i17}
-              location="Great Falls, VA"
+              image={i7}
+              location="Great Falls National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
-              image={i19}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i21}
-              location="Great Falls, VA"
+              image={i9}
+              location="Great Falls National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i23}
-              location="Great Falls, VA"
+              location="Rocky Mountain National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i1}
+              location="Chesapeake and Ohio Canal National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i11}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i19}
+              location="Raven Rocks, WV"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i15}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i29}
+              location="Shenandoah National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i17}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i21}
+              location="Shenandoah National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i25}
-              location="Great Falls, VA"
+              location="Shenandoah National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i27}
-              location="Great Falls, VA"
+              location="Shenandoah National Park"
               date="Summer '24"
             ></GalleryItem>
           </div>
           <div className="gallery-col-2">
             <GalleryItem
               image={i2}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i4}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i6}
-              location="Great Falls, VA"
+              location="Chesapeake and Ohio Canal National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i8}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i10}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i12}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i14}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i16}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i18}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i20}
-              location="Great Falls, VA"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i22}
-              location="Great Falls, VA"
+              location="Great Falls National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i24}
-              location="Great Falls, VA"
+              location="Shenandoah National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i28}
+              location="Shenandoah National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i10}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i4}
+              location="Chesapeake and Ohio Canal National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i12}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i22}
+              location="Shenandoah National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i14}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i6}
+              location="Chesapeake and Ohio Canal National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i16}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i18}
+              location="Great Falls National Park"
+              date="Summer '24"
+            ></GalleryItem>
+            <GalleryItem
+              image={i20}
+              location="Shenandoah National Park"
               date="Summer '24"
             ></GalleryItem>
             <GalleryItem
               image={i26}
-              location="Great Falls, VA"
+              location="Shenandoah National Park"
               date="Summer '24"
             ></GalleryItem>
           </div>

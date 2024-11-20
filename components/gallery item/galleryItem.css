@@ -28,3 +28,7 @@
     font-weight: 400;
     font-size: 10px;
 }
+
+.gallery-item:not(.animate) {
+    opacity: 0;
+}
