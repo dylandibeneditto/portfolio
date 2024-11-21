@@ -39,7 +39,7 @@ export default function Sidebar(props: { selected: string }) {
           ></SidebarLabel>
           <SidebarLabel
             text="Photography"
-            icon="camera"
+            icon="photography"
             link="/photos"
             external={false}
             selected={props.selected}

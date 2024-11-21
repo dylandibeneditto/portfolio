@@ -40,6 +40,7 @@ export default function GalleryItem(props: {
         src={props.image}
         width={1080}
         alt={props.location}
+        placeholder="blur"
         onLoadingComplete={() => {
           if (galleryItemRef.current?.classList.contains("animate")) {
             galleryItemRef.current.classList.add("loaded");
