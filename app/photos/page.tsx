@@ -25,15 +25,14 @@ import i16 from "../../public/photos/bg_final-16.jpg";
 import i17 from "../../public/photos/bg_final-17.jpg";
 import i18 from "../../public/photos/bg_final-18.jpg";
 import i19 from "../../public/photos/bg_final-19.jpg";
-import i20 from "../../public/photos/bg_final-30.jpg";
-import i21 from "../../public/photos/bg_final-30.jpg";
+import i20 from "../../public/photos/bg_final-30 copy.jpg";
+import i21 from "../../public/photos/bg_final-28.jpg";
 import i22 from "../../public/photos/bg_final-22.jpg";
 import i23 from "../../public/photos/20240705-DSC_4047-2-2.jpg";
 import i24 from "../../public/photos/bg_final-23.jpg";
 import i25 from "../../public/photos/bg_final-24.jpg";
 import i26 from "../../public/photos/bg_final-25.jpg";
 import i27 from "../../public/photos/bg_final-26.jpg";
-import i28 from "../../public/photos/bg_final-28.jpg";
 import i29 from "../../public/photos/bg_final-29.jpg";
 import GalleryItem from "@/components/gallery item/galleryItem";
 
@@ -140,11 +139,6 @@ export default function Photos() {
             ></GalleryItem>
             <GalleryItem
               image={i24}
-              location="Shenandoah National Park"
-              date="Summer '24"
-            ></GalleryItem>
-            <GalleryItem
-              image={i28}
               location="Shenandoah National Park"
               date="Summer '24"
             ></GalleryItem>
