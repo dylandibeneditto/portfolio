@@ -5,20 +5,38 @@
 a {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
 }
 
-a > svg {
+a > .arrow {
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: width 200ms ease 60ms;
+}
+
+a:hover > .arrow {
+    width: 2rem;
+    transition-delay: 0s;
+}
+
+a > .arrow > svg {
     width: 27px;
     opacity: 0;
-    animation: opacity .2s ease;
+    filter: blur(5px);
+    transform: translate(0, 50px);
+    transition: opacity 160ms ease, transform 160ms ease, filter 160ms ease;
+    transition-delay: 0s;
 }
 
-a > svg > * {
+a:hover > .arrow > svg {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(0, 0);
+    transition-delay: 50ms, 50ms, 50ms;
+}
+
+a > .arrow > svg > * {
     fill: var(--foreground);
-}
-
-a:hover > svg {
-    opacity: 0.5;
-    animation: ease 0.2s;
 }
