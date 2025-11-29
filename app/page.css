@@ -14,7 +14,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto 1fr;
   grid-area: a;
 }
 
@@ -26,26 +26,26 @@
   animation: none !important;
   transform: none !important;
   cursor: default !important;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
 }
 
 .info > * {
   animation-delay: 200ms;
   opacity: 0;
   font-family: var(--font-jetbrains-mono);
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: -0.2px;
   font-weight: 500;
 }
 
-.info>:nth-child(2) {
-  text-align: right;
+.info > .slash {
+  font-style: italic;
 }
 
 .container > a {
   width: max-content;
   padding: .25rem 0px;
-  padding-right: 6rem;
+  padding-right: 10rem;
   font-size: 22px;
   font-weight: 500;
   height: min-content;
