@@ -49,6 +49,7 @@
   font-size: 22px;
   font-weight: 500;
   height: min-content;
+  letter-spacing: -.5px;
 }
 
 .container > div {

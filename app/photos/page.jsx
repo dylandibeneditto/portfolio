@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className="layout">
       <div className="container animate-on-load">
-
+        
       </div>
     </div>
   );

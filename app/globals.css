@@ -3,8 +3,10 @@
 
 :root {
   --background: #ffffff;
+  --secondary-bg: #00000005;
   --foreground: #171717;
   --secondary: #a7a7a7;
+  --border: #0000000b;
   --load-anim: 1.5s cubic-bezier(0.2, 1.4, 0.5, 1) 0s 1 appear;
   --font-jetbrains-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, "Segoe UI Mono", "Roboto Mono", monospace;
   --font-inter: 'Inter', Helvetica, Arial
