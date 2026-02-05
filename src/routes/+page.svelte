@@ -1,8 +1,25 @@
 <script lang="ts">
-	import { innerWidth, innerHeight } from "svelte/reactivity/window";
+	import {
+		innerWidth,
+		innerHeight,
+		devicePixelRatio,
+	} from "svelte/reactivity/window";
+	import { startBackground } from "$lib/background.svelte";
+	import { onMount } from "svelte";
+
+	let canvas: HTMLCanvasElement;
+
+	onMount(() => {
+		const stop = startBackground(canvas);
+		return stop;
+	});
 </script>
 
-<canvas height={innerHeight.current} width={innerWidth.current}></canvas>
+<canvas
+	bind:this={canvas}
+	height={(innerHeight.current ?? 0) * (devicePixelRatio.current ?? 1)}
+	width={(innerWidth.current ?? 0) * (devicePixelRatio.current ?? 1)}
+></canvas>
 
 <style>
 	* {
@@ -15,7 +32,7 @@
 		inset: 0;
 		width: 100vw;
 		height: 100vh;
-		display: block; /* removes inline-element baseline gap */
+		display: block;
 		z-index: -1;
 	}
 </style>
