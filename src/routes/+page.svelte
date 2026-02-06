@@ -7,6 +7,7 @@
 	import { startBackground } from "$lib/background.svelte";
 	import { onMount } from "svelte";
 	import Header from "$lib/components/header.svelte";
+	import Projects from "$lib/components/projects.svelte";
 
 	let canvas: HTMLCanvasElement;
 
@@ -22,7 +23,12 @@
 	width={(innerWidth.current ?? 0) * (devicePixelRatio.current ?? 1)}
 ></canvas>
 
-<Header />
+<div class="page">
+	<div></div>
+	<Header />
+	<div></div>
+	<Projects />
+</div>
 
 <style>
 	canvas {
@@ -31,6 +37,18 @@
 		width: 100vw;
 		height: 100vh;
 		display: block;
-		z-index: -1;
+		z-index: 0;
+		pointer-events: none;
+	}
+
+	.page {
+		display: grid;
+		grid-template-rows: 10rem auto 5rem auto;
+		z-index: 1;
+		width: 100dvw;
+		height: fit-content;
+		justify-content: center;
+		justify-items: center;
+		background: none;
 	}
 </style>

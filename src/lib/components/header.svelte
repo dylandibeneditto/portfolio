@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div class="header">
     <div class="topbar">
         <div class="name">Dylan DiBeneditto</div>
@@ -11,10 +8,14 @@
         Science, Engineering, and Math.
     </div>
     <div class="links">
-        <a class="email" href="mailto:dibenedittod@gmail.com"
+        <a class="email" target="_blank" href="mailto:dibenedittod@gmail.com"
             >dibenedittod@gmail.com</a
         >
-        <a class="github" href="https://github.com/dylandibeneditto">github</a>
+        <a
+            class="github"
+            target="_blank"
+            href="https://github.com/dylandibeneditto">github</a
+        >
     </div>
 </div>
 
@@ -22,14 +23,11 @@
     .header {
         width: 30vw;
         min-width: 400px;
-        position: absolute;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        left: 50vw;
-        top: 10rem;
         padding: 1rem;
-        transform: translateX(-50%);
+        height: min-content;
         backdrop-filter: blur(2px);
     }
 

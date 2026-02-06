@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+body, html {
+    background: var(--bg);
+}
+
 :root {
     --bg: #ffffff;
     --primary: #080808;
