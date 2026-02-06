@@ -6,6 +6,7 @@
 	} from "svelte/reactivity/window";
 	import { startBackground } from "$lib/background.svelte";
 	import { onMount } from "svelte";
+	import Header from "$lib/components/header.svelte";
 
 	let canvas: HTMLCanvasElement;
 
@@ -21,12 +22,9 @@
 	width={(innerWidth.current ?? 0) * (devicePixelRatio.current ?? 1)}
 ></canvas>
 
-<style>
-	* {
-		margin: 0;
-		padding: 0;
-	}
+<Header />
 
+<style>
 	canvas {
 		position: fixed;
 		inset: 0;

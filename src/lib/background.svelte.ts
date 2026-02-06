@@ -39,7 +39,7 @@ export function startBackground(canvas: HTMLCanvasElement) {
 				py += -diry * (k / dist);
 
 				ctx.beginPath();
-				ctx.arc(px, py, 1.5*window.devicePixelRatio, 0, 2*Math.PI);
+				ctx.arc(px, py, window.devicePixelRatio, 0, 2*Math.PI);
 				ctx.fillStyle = "rgba(0,0,0,"+(n/(Math.PI*6)+0.1)+")";
 				ctx.fill();
 			}

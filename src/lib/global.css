@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'SF-Pro';
+  src: url('$lib/assets/SF-Pro.ttf');
+}
+
+* {
+    font-family: 'SF-Pro', helvetica, sans-serif;
+    letter-spacing: -0.2px;
+    color: var(--primary);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #ffffff;
+    --primary: #080808;
+    --secondary: #9e9e9e;
+}
