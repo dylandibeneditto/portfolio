@@ -49,7 +49,7 @@
     .links > * {
         color: var(--secondary);
         text-decoration: none;
-        opacity: 0.5;
+        opacity: 0.7;
         transition: opacity 0.1s ease;
     }
 
