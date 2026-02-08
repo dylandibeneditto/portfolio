@@ -54,7 +54,7 @@ export function startBackground(canvas: HTMLCanvasElement) {
 	}
 	
 	function mousemove(event) {
-		mouse = { x: event.pageX*window.devicePixelRatio, y: event.pageY*window.devicePixelRatio };
+		mouse = { x: event.clientX*window.devicePixelRatio, y: event.clientY*window.devicePixelRatio };
 	}
 
 	document.addEventListener("visibilitychange", handleVisibility);
