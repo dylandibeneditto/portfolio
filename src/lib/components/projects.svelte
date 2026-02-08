@@ -60,7 +60,7 @@
     .repos {
         width: 80vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 400px);
+        grid-template-columns: repeat(auto-fit, 500px);
         gap: 1rem;
         justify-content: center;
         align-items: stretch;
