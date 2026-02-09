@@ -40,7 +40,8 @@ export function startBackground(canvas: HTMLCanvasElement) {
 
 				ctx.beginPath();
 				ctx.arc(px, py, window.devicePixelRatio, 0, 2*Math.PI);
-				ctx.fillStyle = "rgba(0,0,0,"+(n/(Math.PI*6)+0.1)+")";
+				const opacity = n/(Math.PI*6)+0.1 - (100/(t+0.1))
+				ctx.fillStyle = "rgba(0,0,0,"+opacity+")";
 				ctx.fill();
 			}
 		}
