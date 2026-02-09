@@ -1,4 +1,4 @@
-<div class="header animate-on-load hidden">
+<div class="header animate-on-load">
     <div class="topbar hidden">
         <div class="name">Dylan DiBeneditto</div>
         <div class="title">Software Engineer</div>

@@ -33,7 +33,7 @@ body, html {
     --bg: #ffffff;
     --primary: #080808;
     --secondary: #9e9e9e;
-    --load-anim: 1.5s cubic-bezier(0.2, 1.4, 0.5, 1) 0s 1 appear;
+    --load-anim: 1.5s cubic-bezier(0.2, 1.4, 0.5, 1) 0s 1;
 }
 
 /* load animation */
@@ -50,11 +50,29 @@ body, html {
   }
 }
 
+@keyframes appearWithBackdrop {
+  0% {
+    transform: translate(0, 50px);
+    filter: blur(5px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0);
+    filter: blur(0px);
+    backdrop-filter: blur(2px);
+    opacity: 1;
+  }
+}
+
 .hidden {
   opacity: 0;
 }
 
 .animate {
-  animation: var(--load-anim);
+  animation: var(--load-anim) appear;
   animation-fill-mode: forwards;
+}
+
+.repo.animate {
+  animation: var(--load-anim) appearWithBackdrop;
 }

@@ -28,7 +28,7 @@
 	width={(innerWidth.current ?? 0) * (devicePixelRatio.current ?? 1)}
 ></canvas>
 
-<div class="page animate-on-load">
+<div class="page">
 	<div></div>
 	<Header />
 	<div></div>

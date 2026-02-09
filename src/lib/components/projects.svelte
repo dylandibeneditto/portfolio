@@ -2,7 +2,7 @@
     import Repo from "$lib/components/repo.svelte";
 </script>
 
-<div class="repos animate-on-load hidden">
+<div class="repos animate-on-load">
     <Repo
         image="src/lib/assets/repo-images/fmov.png"
         title="fmov"
