@@ -1,18 +1,20 @@
-<div class="header">
-    <div class="topbar">
+<div class="header animate-on-load hidden">
+    <div class="topbar hidden">
         <div class="name">Dylan DiBeneditto</div>
         <div class="title">Software Engineer</div>
     </div>
-    <div class="description">
+    <div class="description hidden">
         Seventeen-year-old high school student who's interested in Computer
         Science, Engineering, and Math.
     </div>
-    <div class="links">
-        <a class="email" target="_blank" href="mailto:dibenedittod@gmail.com"
-            >dibenedittod@gmail.com</a
+    <div class="links animate-on-load hidden">
+        <a
+            class="email hidden"
+            target="_blank"
+            href="mailto:dibenedittod@gmail.com">dibenedittod@gmail.com</a
         >
         <a
-            class="github"
+            class="github hidden"
             target="_blank"
             href="https://github.com/dylandibeneditto">github</a
         >

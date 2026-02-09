@@ -5,6 +5,7 @@
 		devicePixelRatio,
 	} from "svelte/reactivity/window";
 	import { startBackground } from "$lib/background.svelte";
+	import { triggerAnimateEffect } from "$lib/animateLoad";
 	import { onMount } from "svelte";
 	import Header from "$lib/components/header.svelte";
 	import Projects from "$lib/components/projects.svelte";
@@ -13,6 +14,10 @@
 
 	onMount(() => {
 		const stop = startBackground(canvas);
+		console.log("Mounted");
+		setTimeout(() => {
+			triggerAnimateEffect();
+		}, 600);
 		return stop;
 	});
 </script>
@@ -23,7 +28,7 @@
 	width={(innerWidth.current ?? 0) * (devicePixelRatio.current ?? 1)}
 ></canvas>
 
-<div class="page">
+<div class="page animate-on-load">
 	<div></div>
 	<Header />
 	<div></div>

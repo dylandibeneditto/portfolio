@@ -9,7 +9,7 @@
     } = $props();
 </script>
 
-<div class="repo">
+<div class="repo animate-on-load hidden">
     <img class="image" src={image} />
     <div class="data">
         <div class="title">{title}</div>
