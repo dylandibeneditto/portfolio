@@ -1,28 +1,31 @@
+<script lang="ts">
+    import resume from "$lib/assets/resume.pdf";
+</script>
+
 <div class="header animate-on-load">
     <div class="topbar hidden">
         <div class="name">Dylan DiBeneditto</div>
-        <div class="title">Engineer</div>
+        <div class="title">Electrical Engineer</div>
     </div>
     <div class="description hidden">
-        Rising college freshman who's interested in Electrical Engineering,
+        College freshman who's interested in Electrical Engineering,
         Computer Science, and Math.
     </div>
     <div class="description hidden">
-        Planning on attending Virginia Tech for a Bachelor's in Electrical
-        Engineering.
+        Attending Virginia Tech for a Bachelors in Electrical Engineering.
     </div>
     <div class="links animate-on-load hidden">
         <a
             class="email hidden"
             target="_blank"
-            href="mailto:dibenedittod@gmail.com">dibenedittod@gmail.com</a
+            href="mailto:dyland26@vt.edu">dyland26@vt.edu</a
         >
         <a
             class="github hidden"
             target="_blank"
             href="https://github.com/dylandibeneditto">github</a
         >
-        <a class="resume hidden" target="_blank" href="">resume</a>
+        <a class="resume hidden" target="_blank" href={resume}>resume</a>
         <a class="photos hidden" href="/photos" data-sveltekit-reload>photos</a>
     </div>
 </div>

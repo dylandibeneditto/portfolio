@@ -1,6 +1,10 @@
+<script lang="ts">
+    import resume from "$lib/assets/resume.pdf";
+</script>
+
 <div class="footer animate-on-load">
     <div class="name hidden">Dylan DiBeneditto</div>
-    <div class="title hidden">Software Engineer</div>
+    <div class="title hidden">Electrical Engineer</div>
     <div></div>
     <a class="email hidden" href="mailto:dibenedittod@gmail.com" target="_blank"
         >dibenedittod@gmail.com</a
@@ -10,7 +14,7 @@
         href="https://github.com/dylandibeneditto"
         target="_blank">github</a
     >
-    <a class="resume hidden" href="" tartget="_blank">resume</a>
+    <a class="resume hidden" href={resume} target="_blank">resume</a>
     <a class="photos hidden" href="/photos" target="_blank">photos</a>
 </div>
 

@@ -12,6 +12,13 @@
         repolink="https://github.com/dylandibeneditto/fmov"
     />
     <Repo
+        image="repo-images/k42.png"
+        title="K42"
+        description="A custom wireless split ergonomic mechanical keyboard with a 42 key layout (21 per half). Built around a bare-die nRF52840 MCU, with haptic feedback via a DRV2605L driver and LRA actuator, per-half OLED displays, and Kailh Choc V1 hotswap sockets. Designed in KiCad, from schematic capture through JLCPCB PCBA. Worked with impedance matching networks using a pi filter as well as trace antenna for 2.4GHz BLE connectivity. Also evaluated the margins on selling the completed keyboard pre-assembled, and found the difficulty between trying to stay competitive in the market and provide a scalable completed product."
+        tags={["PCB Design", "KiCad", "Electronics", "Embedded Firmware", "CAD (Fusion360)"]}
+        repolink="https://github.com/dylandibeneditto/k42"
+    />
+    <Repo
         image="repo-images/printjava.png"
         title="PrintJava"
         description="As president of my high school's Computer Science National Honor Society, we submitted a grant to the district for a 3D printer. Upon recieving the printer, I took it upon myself to create a project which would allow controlling the printer through code. This project was difficult, as there are no dependencies since the project must be installed manually to work with the software we use in school. That means I had to work out the logic—from turning a 3D function into a list of triangles, all the way down to converting my abstracted Java object's data straight into binary files. The model seen above is the Mandelbulb Fractal, and was generated with PrintJava. This library is now used as educational material for my high school's Computer Math and AP Computer Science classes."
@@ -52,7 +59,7 @@
             "CAD (Fusion360)",
             "Electronics",
             "C",
-            "Embedded Software",
+            "Embedded Firmware",
         ]}
         repolink="https://github.com/dylandibeneditto/null36"
     />
